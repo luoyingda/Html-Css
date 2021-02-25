@@ -3,47 +3,35 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>课程表练习</title>
-		<style>
-			body {
-				position: relative;
-			}
-			.classes{
-				
-				font-weight: bol;
-			}
-			.classes caption{
-				font-size: 20px;
-				font-weight: bolder;
-			}
-			table {
+		<style type="text/css">
+			table{
 				text-align: center;
 				background-color: lightcyan;
 			}
-
-			td {
-				width: 100px;
-			}
-
-			._blank {
-				height: 20px;
+			caption{
+				font-size: 1.25rem;
+				font-weight: bold;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="classes">
+		<!-- table是盒模型 -->
+		<table border="" width="600px" height="300px" align="center">
 			<caption>课程表</caption>
-			<table border="" cellspacing="" cellpadding="">
+			<thead>
 				<tr>
-					<td colspan="3">时间\日期</td>
-					<td>一</td>
-					<td>二</td>
-					<td>三</td>
-					<td>四</td>
-					<td>五</td>
+					<th colspan="2">时间\日期</th>
+					<th>一</th>
+					<th>二</th>
+					<th>三</th>
+					<th>四</th>
+					<th>五</th>
 				</tr>
+			</thead>
+			<tbody>
 				<tr>
 					<td rowspan="2">上午</td>
-					<td colspan="2">9:30-10:15</td>
+					<td>9:30-10:15</td>
 					<td>语文</td>
 					<td>语文</td>
 					<td>语文</td>
@@ -51,7 +39,7 @@
 					<td>语文</td>
 				</tr>
 				<tr>
-					<td colspan="2">10:25-11:10</td>
+					<td>10:25-11:10</td>
 					<td>数学</td>
 					<td>数学</td>
 					<td>数学</td>
@@ -59,11 +47,11 @@
 					<td>数学</td>
 				</tr>
 				<tr class="_blank">
-					<td colspan="8"></td>
+					<td colspan="7"></td>
 				</tr>
 				<tr>
 					<td rowspan="2">下午</td>
-					<td colspan="2">14:30-15:15</td>
+					<td>14:30-15:15</td>
 					<td>数学</td>
 					<td>数学</td>
 					<td>数学</td>
@@ -71,14 +59,14 @@
 					<td>数学</td>
 				</tr>
 				<tr>
-					<td colspan="2">15:25-16:10</td>
+					<td>15:25-16:10</td>
 					<td>语文</td>
 					<td>语文</td>
 					<td>语文</td>
 					<td>语文</td>
 					<td>语文</td>
 				</tr>
-			</table>
-		</div>
+			</tbody>
+		</table>
 	</body>
 </html>
