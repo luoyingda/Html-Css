@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>input练习</title>
+	</head>
+	<body>
+		<!-- 表单的组成：表单域、表单元素、提示信息 -->
+		<!-- 表单多用来做登录注册页面 -->
+		<!-- 表单域：form  常见属性：action:"URL" method:"post/get" name:"给表单起名字" -->
+		<!-- 常用表单元素：input、button、 -->
+
+		<!-- form中的区域就叫表单域，在提交表单信息时，可以吧这个区域中的信息提交给后台 -->
+		<form action="" method="get" name="baseMessage">
+			<!-- 文本输入框 value：默认值, maxlength:最大输入长度 name：用来定义表单元素的名字 -->
+			<input type="text" value="姓名" name="userName" maxlength="5" /><br />
+
+			<!-- 密码输入框 placeholder：描述输入字段的输入信息  autofocus：自动获取焦点 -->
+			<input type="password" name="passWord" placeholder="请输入密码" autofocus /><br />
+
+			<!-- 单选框 checked：默认选中，value用来区分单选-->
+			<input type="radio" checked name="sex" value="男" />男
+			<input type="radio" name="sex" value="女" />女<br />
+
+			<!-- 多选框 -->
+			<input type="checkbox" checked name="hobby" value="唱歌" />唱歌
+			<input type="checkbox" name="hobby" value="跳舞" />跳舞
+			<input type="checkbox" checked name="hobby" value="游泳" />游泳<br />
+
+			<!-- 按钮 -->
+			<input type="button" value="点击"><br />
+
+			<!-- 上传文件 -->
+			<input type="file"><br />
+
+			<!-- 日期 -->
+			<input type="date"><br />
+
+			<!-- 颜色面板 -->
+			<input type="color"><br />
+
+			<!-- 范围 -->
+			<input type="range"><br />
+
+			<!-- 仅数字 -->
+			<input type="number" /><br />
+
+			<!-- 电话号码 -->
+			<input type="tel" /><br />
+
+			<!-- 提交按钮 -->
+			<input type="submit" value="支付提交">
+
+			<!-- 重置按钮 -->
+			<input type="reset" value="清除"><br />
+			
+			<!-- button -->
+			<input type="button" value="按钮" />
+			<button>按钮</button>
+		</form>
+
+	</body>
+</html>
