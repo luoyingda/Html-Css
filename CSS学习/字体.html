@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字体样式</title>
+		<style>
+			/* 中文或多个英文单词需要加引号，一个英文单词不需要加引号的，多种字体之间用逗号分隔 */
+			p{
+				font-family: "宋体";/* 字体样式 */
+				font-family:"arial black" ,arial;
+				font-size: 30px; /* 字体大小默认是16px */
+				font-weight: 600;/* 定义字体的粗细 */
+				font-style: italic;/* 定义字体倾斜 */
+				/* 字体的复合属性：1、使用font复合属性的时候，必须按照上面的顺序，并且属性之间要有空格隔开 2、font-size和font-family这两个属性不能省略 */
+				/* font-style font-weight font-size font-family */
+				font: normal bold 20px "arial black";
+			}
+			strong{
+				font-weight: normal;
+			}
+			em{
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body>
+		<p>最可爱的人</p>
+		<strong>最优秀的人</strong><br>
+		<em>倾斜</em>
+	</body>
+</html>

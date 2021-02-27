@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文本属性</title>
+		<style type="text/css">
+			div {
+				/* 字体颜色 */
+				color: #00FFFF;/* 改变字体颜色：16进制 */
+				color: aqua;/* 改变字体颜色：颜色单词 */
+				color: rgb(0, 255, 0);/* 改变字体颜色：rgba */
+				/* 文字位置 */
+				text-align: center;/* 默认靠左left，居中center，靠右right */
+			}
+
+			p {
+				/* 首行文本缩进 */
+				text-indent: 50px;
+				/* 缩进两个字的距离 */
+				text-indent: 2rem;/* em是相对单位，2em就是2倍本元素的字体大小，如果没有设置字体大小，就是父元素的字体大小 */
+				/* 设置文本行高,行高包含：上下间距、文字大小 */
+				line-height: 2.25rem;
+			}
+			a{
+				/* 文本装饰线 */
+				text-decoration: none;/* 用来清除a标签的默认样式 */
+				text-decoration: line-through;
+			}
+			h1{
+				/* 文字垂直居中：让height等于line-height。原理：行高由文字大小、上间距和下间距共同组成，当我们让linr-height和盒子的高度相同时，上下间距均分后，就把文字挤到了中间的位置*/
+				height: 100px;
+				background-color: #00FFFF;
+				line-height: 100px;
+			}
+			.two{
+				/* 宽、高、背景颜色 */
+				color: black;
+				width: 100px;
+				height: 100px;
+				background-color: cadetblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>最可爱的人，最优秀的人</div>
+		<p>从那时起，我就不知疲倦地练习滑冰，一直滑到冰场关门的时候。功夫不负有心人，我现在已经是一只飞在天空中的小燕子了。</p>
+		<a href="@javascript:;">www.baidu.com</a>
+		<h1>你好，我好，大家好！</h1>
+		<div class="two">大家好，我是vae，这是我的第一张专辑自定义</div>
+	</body>
+</html>
