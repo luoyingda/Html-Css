@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS引入的方式</title>
+		<!-- 外链式 -->
+		<link rel="stylesheet" type="text/css" href="css/CSS引入的方式.css"/>
+		<style type="text/css">
+			/* 内嵌式 */
+			div,p{
+				font-size: 25px;
+				color: red;
+			}
+		</style>
+		<!-- 导入式 -->
+		<!-- <style type="text/css">
+			@import url("./css/CSS引入的方式.css");
+		</style> -->
+	</head>
+	<body>
+		<!-- 行内式 -->
+		<div class="box" style="width: 100px; height: 100px; background-color: #00FFFF;">哈哈哈</div>
+		<p>呦</p>
+	</body>
+</html>
