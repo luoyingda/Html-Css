@@ -4,20 +4,86 @@
 		<meta charset="utf-8">
 		<title>CSS选择器之复合选择器</title>
 		<style>
+			/* 子选择器: > ，选择器没有权重*/
+			/* 权重：.main:10,p:1 总和：11 */
 			.main>p{
 				background: teal;
 			}
-			p{
+			/* p{
 				background: red;
+			} */
+			/* 后代选择器：空格 */
+			.main p{
+				background: teal;
+			}
+			/* 相邻兄弟选择器：+，只能向下寻找，只能找到相邻的兄弟元素 */
+			.main1 h1+p{
+				/* 权重：10+1+1=12 */
+				background: teal;
+			}
+			/* 通用兄弟选择器：~,只能向下寻找，只要是兄弟元素都能被选中 */
+			.main1 h1~p{
+				background: red;
+			}
+			/* 相同代码造成代码冗余，使用并集选择器将相同代码整合 */
+			/* .box1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.p1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			} */
+			/* 并集选择器：, */
+			.box1,.p1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			
+			li{
+				width: 100px;
+				height: 100px;
+				background: green;
+			}
+			.li1{
+				color: red;
+			}
+			/* 交集选择器：没有符号紧紧相邻 */
+			.li1.current{
+				background: darkgoldenrod;
 			}
 		</style>
 	</head>
 	<body>
+		<ul>
+			<li class="li1 current">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+		<div class="box1">box1</div>
+		<p class="p1">p1</p>
 		<div class="main">
+			<!-- 包含在div内的所有元素都是后代元素 -->
 			<p>p1</p>
 			<div>
 				<p>p2</p>
 			</div>
+		</div>
+		<div class="main1">
+			<h1>h1</h1>
+			<p>p1</p>
+			<p>p2</p>
+			<p>p3</p>
+			<h1>h1</h1>
+			<p>p1</p>
+			<p>p2</p>
+			<p>p3</p>
 		</div>
 	</body>
 </html>
