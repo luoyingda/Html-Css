@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS的三代特性</title>
+		<style>
+			.main {
+				color: red;
+			}
+			#main2{
+				color:greenyellow;
+				/* color: red !important; */
+			}
+			#main2 p{
+				color: #5F9EA0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- css三大特性：继承性、层叠性、优先级 -->
+		<div class="main">
+			<h3>继承性</h3>
+			<p>官方解释，继承是一种规则，它允许样式不仅应用于特定的html元素，而且应用于其后代元素。简单说就是给父元素设置一些属性，子元素/后代也可以使用，这个我们称之为继承性。</p>
+			<span>
+				并不是所有的属性都可以继承，以color/font-/text-/line-开头的属性都可以继承。
+			</span>
+		</div>
+		<div class="main1">
+			<h3>层叠性</h3>
+			<p>层叠性就是CSS处理冲突的一种能力。通俗的说就是多种选择器选中了同一个元素，又对相同的属性设置了不同的属性值，这个时候就会发生层叠性</p>
+			<ol>
+				<li>如果权重相同的话，就看css代码的顺序，后面的会把前面的属性覆盖</li>
+				<li>如果权重不相同的话，谁权重大就听谁的。</li>
+			</ol>
+		</div>
+		<div id="main2" style="color: #00FFFF;">
+			<h3>优先级</h3>
+			<p>!important(无穷大)>行内样式(1000)>id(100)>类(10)>标签(1)>通配符、继承(0)</p>
+			<b>注意：如果该元素没有直接选中，而是通过继承得到的属性设置，那么不管它的父级权重有多高，该元素的权重都是0</b>
+		</div>
+	</body>
+</html>

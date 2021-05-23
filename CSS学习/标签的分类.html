@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>标签的分类</title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			span{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">这是块级元素</div><div>2</div>
+		<h3>块级元素</h3>
+		<p>块级元素的特点</p>
+		<ol>
+			<li>独占一行</li>
+			<li>可以设置宽、高、内边距、外边距</li>
+			<li>如果不设置宽度，可以继承父级的宽度</li>
+			<li>是一个容器或者盒子，里面可以放行内或者块级元素</li>
+		</ol>
+		<b>常见的块级元素：div、p、h1-h6、ul、ol、li等</b><br>
+		<em>注意：文字类的元素内不能使用块级元素。</em><br>
+		<em>p标签主要是用来存放文字，因此p里面不能放块级元素</em><br>
+		<em>h1-h6也是文字类的会计标签，里面也不能放块级元素</em><br>
+		<span>这是行内元素</span><span>2</span>
+		<h3>行内元素</h3>
+		<p>行内元素的特点</p>
+		<ol>
+			<li>相邻的行内元素可以在一行上</li>
+			<li>设置宽、高无效，盒子的大小就是自身内容的大小</li>
+			<li>只能放文字或者其他的行内元素</li>
+		</ol>
+		<b>常见的行内元素：a、span、b、strong、em等格式化标签</b><br>
+		<em>注意：</em><b>a标签内不能再放a标签</b><br>
+		<img src="" alt="这是行内块元素:行内块是特殊的行内元素">
+		<p>行内块元素的特点</p>
+		<ol>
+			<li>可以和其他的行内（行内块）元素共占一行，但是中间会出现缝隙</li>
+			<li>可以设置宽、高</li>
+			<li>盒子默认的大小就是本身内容的大小</li>
+		</ol>
+		<b>常见的块级元素：img、input、table、video等</b>
+	</body>
+</html>

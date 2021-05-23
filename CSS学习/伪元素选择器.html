@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪类选择器</title>
+		<style type="text/css">
+			/* 默认链接 */
+			a:link{
+				color: red;
+			}
+			/* 访问过后 */
+			a:visited{
+				color: #00FFFF;
+			}
+			/* 重点：鼠标滑上状态 */
+			a:hover{
+				color: #5F9EA0;
+			}
+			/* 鼠标点击状态 */
+			a:active{
+				color: #8A2BE2;
+			}
+			/* 注意：需要按照一定的顺序，这个顺序在网络上被称为“爱恨原则（love hate） */
+			
+			/* focus用于获取焦点 */
+			input:focus{
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://www.baidu.com/">百度</a>
+		<input type="text">
+		<input type="text">
+	</body>
+</html>
