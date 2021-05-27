@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>面试题之外边距合并</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			em{
+				color: #ADD8E6;
+			}
+			.box1,.box2{
+				width: 100px;
+				height: 100px;
+				background: pink;
+			}
+			.box1{
+				/* margin-bottom: 30px; */
+			}
+			.box2{
+				background: green;
+				margin-top: 70px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>外边距合并</h3>
+		<em>描述：</em><b>有两个兄弟元素：box1，box2垂直排列，我给box1设置margin-bottom:30px;再给box2设置margin-top:100px;这两个元素之间的距离并不是两者之和，而是取最大的那个值。就是margin值合并问题。</b><br>
+		<em>解决办法：</em><b>对于同一侧的盒子距离，我们只给某一个元素设置即可</b>
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>面试题之外边距塌陷</title>
+		<style>
+			em{
+				color: #ADD8E6;
+			}
+			.b1{
+				color: orange;
+			}
+			.main{
+				width: 200px;
+				height: 200px;
+				background: lightblue;
+				/* 外边距塌陷第一种解决办法 */
+				/* border-top: 1px solid transparent; *//* 嫌弃红色#FF0000太明显可以使用transparent，它还会改变大盒子的大小 */
+				box-sizing: border-box;
+				/* 外边距塌陷第二种解决办法 */
+				overflow: hidden;
+				/* 外边距塌陷第三种解决办法：不在小盒子内设置margin-top,而是在大盒子内设置padding-top */
+				padding-top: 30px;
+			}
+			.child{
+				width: 100px;
+				height: 100px;
+				background: lightcoral;
+				/* margin-top: 30px; */
+			}
+		</style>
+	</head>
+	<body>
+		<h3>外边距塌陷（穿透）</h3>
+		<em>描述：</em><b>有一个大盒子里面包含小盒子，如果大盒子没有设置padding-top或者是border-top,直接给小盒子设置margin-top，大盒子会跟着小盒子一起向下移动，这个现象就是margin值穿透问题。</b><br>
+		<em>解决办法：</em>
+		<ol>
+			<li>给大盒子加border-top:1px solid transparent</li>
+			<li>给大盒子增加overflow:hidden</li>
+			<li>既然margin-top有这样的问题，我们可以给大盒子增加padding-top，来规避这个问题</li>
+		</ol>
+		<b class="b1">还有浮动、固定定位、绝对定位、行内块等也都可以解决这个问题。</b>
+		<div class="main">
+			<div class="child"></div>
+		</div>
+	</body>
+</html>

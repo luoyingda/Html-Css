@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计算盒子总大小</title>
+		<style>
+			.box1{
+				width:100px;
+				height: 100px;
+				border: 10px solid #FFC0CB;
+				background: lightblue;
+				padding: 20px;
+			}
+			.box2{
+				width:100px;
+				height: 100px;
+				border: 10px solid #FFC0CB;
+				background: lightblue;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			em{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">Hellow</div>
+		<span>总盒子的宽度=content的width+左右padding+左右border</span>
+		<span>总盒子的高度=content的height+上下padding+上下border</span>
+		<div class="box2">World</div>
+		<h2>在实际开发中，如果设计图中的总盒子大小要求为宽100px高100px，我们可以直接使用box-sizing:border-box属性将标准盒模型转换为ie盒模型。</h2>
+		<h3>盒模型的分类</h3>
+		<ol>
+			<li>标准盒模型：box-sizing:content-box;（默认）</li>
+			<li>ie盒模型：box-sizing:border-box;</li>
+		</ol>
+		<em>区别：标准盒模型中，代码里面所写的width和height指的是盒模型中content部分的宽和高。</em><br>
+		<em>ie盒模型中，代码里面所写的width和height指的是总盒子的宽和高（在实战项目中经常用到这个）</em>
+	</body>
+</html>

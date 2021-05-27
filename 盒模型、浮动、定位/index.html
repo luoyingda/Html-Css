@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>盒模型</title>
+		<style>
+			em{
+				color: red;
+			}
+			li{
+				padding:10px 20px 30px 40px;/* 顺序：上右下左 */
+			}
+			#box1{
+				background: pink;
+				/* padding-top: 10px; */
+				padding-right: 20px;
+				padding-bottom: 30px;
+				padding-left: 40px;
+				border: 10px solid #FF0000;
+				border-radius: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>盒模型</h3>
+		<p>盒模型是一种写网页的思维模式，每一个元素都可以看成一个盒子。为了方便记忆，我们可以把它想象成手机盒子。手机就是content部分，白色填充物就是padding部分，手机盒子的边框就是border，多个手机盒子之间的距离就是margin。</p>
+		<img src="./img/9387d02ed386836765b0bf9498ebe354.jpeg" alt="盒模型">
+		<em>写页面最重要的知识：盒模型、浮动、定位</em>
+		<h3>盒模型主要包括及部分：</h3>
+		<ol>
+			<li>content：主要内容区域</li>
+			<li>padding：元素盒子与内容直接的内填充</li>
+			<li>border：元素盒子的边框</li>
+			<li>margin：元素与元素之间的距离</li>
+		</ol>
+		<span id="box1">Hello World</span><br>
+		<em>注意：对于行内元素，不要用padding-top、padding-bottom、margin-top、margin-bottom</em>
+	</body>
+</html>
