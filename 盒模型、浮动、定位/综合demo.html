@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>demo</title>
+		<style>
+			body{
+				background: lightblue;
+			}
+			/* 重置样式（清除默认样式） */
+			*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+			.teacBox{
+				width: 1200px;
+				height: 1000px;
+				border: 1px solid red;
+				margin: 0 auto;
+			}
+			.teacBox h2,h5{
+				height: 60px;
+				/* 文字垂直水平居中 */
+				line-height: 60px;
+				text-align: center;
+				font-weight: normal;
+			}
+			h2{
+				font-size: 28px;
+			}
+			h5{
+				font-size: 20px;
+			}
+			.teacBox ul{
+				font-size: 0;	
+			}
+			.teacBox li{
+				width: 270px;
+				display: inline-block;
+				margin: 10px;
+			}
+			.teacBox li>a{
+				display: block;
+			}
+			img{
+				width: 100%;
+				display: block;
+			}
+			/* >是子元素选择器，空格是子代选择器包括孙子等等 */
+			.teacBox li p{
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: #FFFFFF;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 先搭结构  -->
+		<div class="teacBox">
+			<h2>教学活动</h2>
+			<h5>开启人生新起点</h5>
+			<!-- 注重：上下结构，左右结构 -->
+			<ul>
+				<li>
+					<a href=""><img src="./img/9387d02ed386836765b0bf9498ebe354.jpeg" alt="">
+						<p>大家好</p>
+					</a>
+				</li>
+				<li><a href=""><img src="./img/9387d02ed386836765b0bf9498ebe354.jpeg" alt="">
+						<p>大家好</p>
+					</a></li>
+				<li><a href=""><img src="./img/9387d02ed386836765b0bf9498ebe354.jpeg" alt="">
+						<p>大家好</p>
+					</a></li>
+				<li><a href=""><img src="./img/9387d02ed386836765b0bf9498ebe354.jpeg" alt="">
+						<p>大家好</p>
+					</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
