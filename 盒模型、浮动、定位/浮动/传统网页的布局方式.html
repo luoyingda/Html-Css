@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动</title>
+		<style>
+			body{
+				/* font-size: 0; */
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: darkblue;
+				float: left;
+				/* display: inline-block; */ /*转换为行内块*/
+				/* font-size: 14px; */
+				/* vertical-align: middle; */
+			}
+			.box2{
+				width: 200px;
+				height: 200px;
+				background: pink;
+				/* float: right; */
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<em>普通文档流：块级元素上下排列，行内元素左右排列</em>
+			<h3>浮动：可以使页面中的两个块元素在一行显示</h3>
+			<ol>特点：
+				<li>脱离了普通文档流：位置空了</li>
+				<li>浮动的元素具备行内块的特性：
+					<ul>
+						<li>元素可以左右排列</li>
+						<li>即使是行内元素，浮动之后写大小也可以起作用</li>
+						<li>即使是块级元素，浮动之后，如果不写宽度，不在默认占满父盒子，而是由自身内容决定</li>
+					</ul>
+				</li>
+			</ol>
+			<b>浮动的元素碰到普通文档流的边缘救回停下来，浮动的元素之后会影响他后面的普通文档流元素（对前面不造成影响）</b>
+		</div>
+		<div class="box1">左</div>
+		<div class="box2">右</div>
+	</body>
+</html>
