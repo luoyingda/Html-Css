@@ -21,6 +21,20 @@
 				background: gold;
 				float: left;/* 若父元素没有高度则子盒子设置浮动后父元素塌陷 */
 			}
+			.clear{
+				clear: left;/* left：清除左浮动，right：清除右浮动，both：清除所有方向的浮动*/
+			}
+			.clearfix:after{
+				content: "";
+				font-size: 0;
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+			.clearfix{
+				*zoom:1;
+			}
 		</style>
 	</head>
 	<body>
@@ -30,11 +44,12 @@
 				<li>给父级元素加高度</li>
 				<li>给父级元素加overflow:hidden;</li>
 				<li>隔墙法，用clear清除浮动造成的影响</li>
-				<li>通过伪元素清除浮动（原理同上）</li>
+				<li>通过伪元素清除浮动（原理同上）,谁浮动就找谁的父亲，并在类名中增加：clearfix即可</li>
 			</ul>
 		</div>
-		<div class="top">
+		<div class="top clearfix">
 			<div class="box1"></div>
+			<div class="clear"></div>
 		</div>
 		<div class="bottom"></div>
 	</body>

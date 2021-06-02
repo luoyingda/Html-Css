@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪元素</title>
+		<style type="text/css">
+			p::after{
+				content: "加油";
+				color: red;
+				font-size: 30px;
+			}
+			p::before{
+				content: "YES";
+				color: red;
+			}
+			/* 通过CSS使用隔墙法 */
+			.clearfix:after{
+				content: "";/*这个属性必须有*/
+				font-size: 0;
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+			.clearfix{
+				*zoom:1;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Hellow World</p>
+	</body>
+</html>

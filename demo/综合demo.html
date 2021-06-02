@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>案例</title>
+		<style type="text/css">
+			/* 首先而且是最重要的一步：重置样式 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul,ol{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			body{
+				font-size: 14px;
+				color: #333;
+				
+			}
+			.phoneWrapper{
+				width: 1226px;
+				/* height: 600px; */
+				/* background: red; */
+				margin: 0 auto;
+			}
+			.phoneWrapper .top{
+				height: 58px;
+				line-height: 58px;
+				/* background: pink; */
+			}
+			.phoneWrapper .bottom{
+				height: 614px;
+				/* background:yellow; */
+			}
+			/* .phoneWrapper h3,.all{
+				line-height: 50px;
+			} */
+			.phoneWrapper h3{
+				float: left;
+				font-size: 22px;
+				font-weight: 200;
+			}
+			.phoneWrapper .all{
+				float: right;
+				color: #333;
+			}
+			.phoneWrapper .left{
+				width: 234px;
+				height: 100%;
+				/* display: block; */
+				background: url(./images/lfet.webp);
+				background-size: cover;
+				float: left;
+			}
+			.phoneWrapper .right{
+				width: 992px;
+				height: 100%;
+				/* background: gold; */
+				float: left;
+			}
+			.phoneWrapper .right li{
+				width: 234px;
+				height: 300px;
+				background: #CCC;
+				float: left;
+				margin-left: 14px;
+				margin-bottom: 14px;	
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 项目实战：从外向内从上向下从左到右划分盒子 -->
+		<!-- 写页面的实质：画盒子，摆位置 -->
+		<!-- 手机模块 -->
+		<div class="phoneWrapper">
+			<div class="top">
+				<h3>手机</h3>
+				<a href="" class="all">查看全部</a>
+			</div>
+			<div class="bottom">
+				<a class="left" href=""></a>
+				<ul class="right">
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
