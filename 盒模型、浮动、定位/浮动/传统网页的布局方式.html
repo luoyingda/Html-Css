@@ -22,7 +22,17 @@
 				background: pink;
 				/* float: right; */
 			}
-			
+			.box3{
+				width: 200px;
+				height: 200px;
+				background: green;
+				float: left; /*浮动的元素碰到普通文档流的边缘就会停下来*/
+			}
+			.bottom{
+				width: 300px;
+				height: 300px;
+				background: gold;
+			}
 		</style>
 	</head>
 	<body>
@@ -39,9 +49,11 @@
 					</ul>
 				</li>
 			</ol>
-			<b>浮动的元素碰到普通文档流的边缘救回停下来，浮动的元素之后会影响他后面的普通文档流元素（对前面不造成影响）</b>
+			<b>浮动的元素碰到普通文档流的边缘就会停下来，浮动的元素只会影响他后面的普通文档流元素（对前面不造成影响）</b>
 		</div>
 		<div class="box1">左</div>
 		<div class="box2">右</div>
+		<div class="box3">浮动对普通文档流的影响</div>
+		<div class="bottom">浮动元素后面的元素</div>
 	</body>
 </html>

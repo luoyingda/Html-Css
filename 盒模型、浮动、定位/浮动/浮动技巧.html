@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动技巧</title>
+		<style>
+			.main{
+				
+			}
+			.main p{
+				color: gold;
+			}
+			.box1{
+				width: 1200px;
+				/* height: 500px; */
+				/* border: 1px solid red; */
+				margin: 0 auto;
+			}
+			.top{
+				height: 200px;
+				background: #008B8B;
+			}
+			.bottom{
+				height: 200px;
+				/* background: #FF8C00; */
+				margin-top: 50px;
+			}
+			.bottom>div{
+				width: 200px;
+				height: 200px;
+				line-height: 200px;
+				background: #00FFFF;
+				text-align: center;
+				float: left;
+				margin-right: 25%;
+			}
+			.bottom .nmr{
+				margin-right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			 <b>做一个页面要先从外到内划分盒子，先解决父盒子的样式，在解决子盒子的样式</b>
+			<ul>
+				<li>
+					浮动和普通文档流父盒子搭配使用
+					<p>先用普通文档流的父盒子排列好上下位置，里面的小盒子采用浮动进行左右排列</p>
+				</li>
+				<li>一浮全浮：一个元素设置浮动了，他的兄弟元素都要设置浮动</li>
+			</ul>
+		</div>
+		<div class="box1">
+			<div class="top"></div>
+			<div class="bottom">
+				<div>1</div>
+				<div>2</div>
+				<div class="nmr">3</div>
+			</div>
+		</div>
+	</body>
+</html>
