@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定位</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.box1 {
+				width: 300px;
+				height: 300px;
+				background: #00FF7F;
+				position: relative;
+				/*定位的方式*/
+				left: 100px;
+				/*方向值：left、right、top、bottom*/
+			}
+
+			.box2 {
+				width: 300px;
+				height: 300px;
+				background: #00FF7F;
+			}
+
+			.box3 {
+				width: 500px;
+				height: 500px;
+				background: gold;
+				/* position: absolute; */
+				/*已经存在定位了就不需要设置下面的相对定位做参照物了*/
+				/* 设置参照物 */
+				position: relative;
+			}
+
+			.child {
+				width: 100px;
+				height: 100px;
+				background: darkblue;
+				/* 首先设置定位方式：绝对定位 */
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+			.box4{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<h3>定位的应用场景</h3>
+		<p>定位的元素可以所心所欲的移动位置，但不会影响其他元素，常用的场景：banner图、快速导航、左右箭头等</p>
+		<p>目的：无论哪种定位，都是为了让元素到达指定地点</p>
+		<h3>定位的组成：<b>定位的方式+具体的方向值</b></h3>
+		<b>定位(position)的分类(方式)有哪些：</b>
+		<ul>
+			<li>静态定位:positon:static;(默认情况)</li>
+			<li>相对定位:position:relative;</li>
+			<li>绝对定位:position:absolute;</li>
+			<li>固定定位:position:fixed;</li>
+			<li>粘性定位:sticky</li>
+		</ul>
+
+		<div class="box1">
+			<h3>相对定位</h3>
+			<ul>
+				<li>参照物是自身，参照自己原来的位置进行移动</li>
+				<li>另一个重要作用：给绝对定位做参照物</li>
+			</ul>
+			<b>特点：没有脱离文档流，位置还在</b>
+		</div>
+		<div class="box2"></div>
+		<div class="box3">
+			<h3>绝对定位参照物</h3>
+			<ul>
+				<li>参照物是其他元素（祖先元素），绝对定位关于参照物的规则：</li>
+				<li>只要是祖先级元素，并且里面有“绝对定位”或“固定定位”或“相对定位”就满足了参照物条件</li>
+				<li>如果多个祖先都满足条件，按照“就近原则”，谁离那个元素最近，谁就是参照物</li>
+				<li>如果祖先级元素“都没设置”参照物条件，那参照物就是body</li>
+			</ul>
+			<h3>绝对定位的特点：</h3>
+			<ul>
+				<li>绝对定位的元素，脱离了普通文档流，不在占位，层级该与普通文档流的层级</li>
+				<li>绝对定位的元素，即使是行内元素，写宽、高也可以起作用</li>
+				<li>绝对定位的元素，如果是块级元素，不写宽度，就是自身内容大小</li>
+			</ul>
+			<h3>绝对定位的层级：z-index</h3>
+			<p>只有定位元素才有z-index这个属性，默认是auto，z-index这个值可以是0、正数、负数，值越大，层级越高</p>
+			<div class="child"></div>
+			<div class="box2"></div>
+		</div>
+		<div class="box4">
+			<h3>固定定位：主要用来做快速导航</h3>
+		</div>
+	</body>
+</html>
