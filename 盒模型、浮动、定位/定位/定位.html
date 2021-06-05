@@ -8,7 +8,6 @@
 				margin: 0;
 				padding: 0;
 			}
-
 			.box1 {
 				width: 300px;
 				height: 300px;
@@ -46,6 +45,11 @@
 			}
 			.box4{
 				
+			}
+			.sticky{
+				border: 1px solid darkgoldenrod;
+				position: sticky;
+				top: 0;
 			}
 		</style>
 	</head>
@@ -93,6 +97,12 @@
 		</div>
 		<div class="box4">
 			<h3>固定定位：主要用来做快速导航</h3>
+		</div>
+		<div class="sticky">
+			<h3>粘性定位</h3>
+			<p>position:sticky;是css定位新增属性；可以说是相对定位relative和固定定位fixed的结合；它主要用在对scroll事件的监听上</p>
+			<p>简单来说，在滑动过程中，某个元素距离其父元素的距离达到sticky粘性定位的要求时（比如：top:100px;）position:sticky;这时的效果相当于fixed定位，固定到适当的位置。</p>
+			<b>使用场景：可以将导航栏固定在页面顶端</b>
 		</div>
 	</body>
 </html>
