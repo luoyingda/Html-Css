@@ -4,26 +4,192 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-			*{
+			* {
 				margin: 0;
 				padding: 0;
 			}
-			ul,ol{
+
+			ul,
+			ol {
 				list-style: none;
 			}
-			a{
+
+			a {
 				text-decoration: none;
+			}
+
+			.main {}
+
+			.fastNav {
+				width: 84px;
+				font-size: 14px;
+				color: #757575;
+				position: fixed;
+				right: 0;
+				top: 50%;
+				margin-top: -280px;
+			}
+
+			.fastNav li {
+				height: 90px;
+				border: 1px solid #CCCCCC;
+				border-bottom: none;
+				padding-top: 18px;
+			}
+
+			.fastNav li:hover .imgBox img:nth-child(2) {
+				opacity: 1;
+			}
+
+			.fastNav li:last-child {
+				margin-top: 14px;
+				border-bottom: 1px solid #CCCCCC;
+			}
+
+			.fastNav .imgBox {
+				width: 30px;
+				height: 30px;
+				position: relative;
+				/* 子元素设置好绝对定位，但没有在父元素设置相对定位为参照物，会默认以body为父元素。 */
+				margin: 0 auto;
+			}
+
+			.fastNav img {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.fastNav .imgBox img:nth-child(2) {
+				opacity: 0;
+			}
+
+			.fastNav p {
+				text-align: center;
+				margin-top: 8px;
+			}
+
+			.fastNav a:hover {
+				color: #ff6700;
+			}
+
+			.fastNav li:nth-last-child(2) {
+				border-bottom: 1px solid #CCCCCC;
+			}
+
+			.fastNav li:first-child:hover
+			 .weixin{
+				display: block;
+			}
+			.fastNav .weixin {
+				width: 130px;
+				height: 192px;
+				background: #FFFFFF;
+				border: 1px solid #F5F5F5;
+				position: absolute;
+				left: -144px;
+				top: 0;
+				display: none;
+			}
+			
+			.fastNav .weixinBox {
+				width: 100px;
+				height: 100px;
+				background-image: url(image/ewm.png);
+				background-size: cover;
+				margin: 0 auto;
+			}
+
+			.fastNav .text {
+				color: #000000;
+				text-align: center;
+				margin: 14px auto 0 auto;
+			}
+
+			.weixin::after {
+				content: "";
+				position: absolute;
+				right: -20px;
+				top: 21px;
+				border: 10px solid red;
+				border-color: transparent transparent transparent #FFFFFF;
+			}
+
+			.weixin::before {
+				content: "";
+				position: absolute;
+				right: -20px;
+				top: 21px;
+				border: 10px solid red;
+				border-color: transparent transparent transparent #F5F5F5;
 			}
 		</style>
 	</head>
 	<body>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+		<!-- 实战项目先定位盒子，之后写样式，a标签需要切换图片颜色可以使用两张不同颜色的图标 -->
+		<div class="main"></div>
+		<ul class="fastNav">
+			<li>
+				<a href="">
+					<div class="imgBox">
+						<img src="./image/phone2.png">
+						<img src="./image/phone1.png">
+					</div>
+					<p>手机APP</p>
+				</a>
+				<div class="weixin">
+					<div class="weixinBox"></div>
+					<p class="text">扫码领取大礼包</p>
+				</div>
+			</li>
+			<li>
+				<a href="">
+					<div class="imgBox">
+						<img src="./image/people1.png">
+						<img src="./image/people2.png">
+					</div>
+					<p>个人中心</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="imgBox">
+						<img src="./image/setting1.png">
+						<img src="./image/setting2.png">
+					</div>
+					<p>售后服务</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="imgBox">
+						<img src="./image/erji2.png">
+						<img src="./image/erji1.png">
+					</div>
+					<p>人工客服</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="imgBox">
+						<img src="./image/buyCar2.png">
+						<img src="./image/buyCar1.png">
+					</div>
+					<p>购物车</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="imgBox">
+						<img src="./image/arrow1.png">
+						<img src="./image/arrow2.png">
+					</div>
+					<p>回顶部</p>
+				</a>
+			</li>
 		</ul>
 	</body>
 </html>
