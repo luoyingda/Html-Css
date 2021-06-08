@@ -1,50 +1,46 @@
-html{
-	position: relative;
-	min-height: 100%;
+.topAdv {
+	height: 120px;
+	background: url(../images/41d16e66381cfeda7b6b39ab67678d5e.webp) center center no-repeat;
+	background-size: cover;
 }
 
-body{
-	margin-bottom:60px;
+.navBox {
+	background: #333333;
 }
 
-nav{
-	/* 设置nav元素的CSS样式 */
-	width:100%;
-	height: auto;/*auto:让nav标签的高度自适应子元素的高度 */
-	background: burlywood;/* 设置nav元素的背景颜色 */
-	
+.navBoxIn {
+	width: 1266px;
+	height: 40px;
+	margin: 0 auto;
+	background: pink;
+	line-height: 40px;
 }
 
-nav ul{
-	display: flex;
-	width:100%;
-	height: auto;/*auto:让nav标签的高度自适应子元素的高度 */
-	line-height: 2.5rem;
-}
-nav ul li{
-	flex: 1;
-	text-align: center;
-	/* border: 1px solid #000; */
-}
-nav ul li:first-child{
-	flex: 0.1;
-	text-align: center;
+.navBoxInLeft {
+	float: left;
 }
 
-nav ul li a{
-	color:white;/* 字体颜色为白色 */
-	text-decoration: none; /* 当a标签中存在href属性时去除下划线 */
-}
- 
-footer{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 3.75rem;
-	background: black;
+.navBoxInRight {
+	float: right;
 }
 
-footer .dibu{
-	color: white;
+.navBox a {
+	color: #b0b0b0;
+}
+
+.navBoxIn span {
+	color: #424242;
+}
+
+.navBoxInLeft a,.navBoxInLeft span,.navBoxInRight a,.navBoxInRight span{
+	float: left;
+}
+.navBoxInLeft span,.navBoxInRight span{
+	margin: 0 3.6px;
+}
+.cart{
+	width: 120px;
+	height: 40px;
+	background: #000000;
 	text-align: center;
 }
