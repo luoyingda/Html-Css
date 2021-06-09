@@ -8,11 +8,15 @@
 	background: #333333;
 }
 
+.md {
+	width: 1226px;
+	margin: 0 auto;
+}
+
 .navBoxIn {
 	width: 1266px;
 	height: 40px;
 	margin: 0 auto;
-	background: pink;
 	line-height: 40px;
 }
 
@@ -32,15 +36,99 @@
 	color: #424242;
 }
 
-.navBoxInLeft a,.navBoxInLeft span,.navBoxInRight a,.navBoxInRight span{
+.navBoxInLeft a,
+.navBoxInLeft span,
+.navBoxInRight a,
+.navBoxInRight span {
 	float: left;
 }
-.navBoxInLeft span,.navBoxInRight span{
+
+.navBoxInLeft span,
+.navBoxInRight span {
 	margin: 0 3.6px;
 }
-.cart{
+
+.cart {
 	width: 120px;
 	height: 40px;
 	background: #000000;
 	text-align: center;
+	margin-left: 20px;
+}
+
+.icon-gouwuche {
+	margin-right: 3px;
+	vertical-align: -1px;
+}
+
+.navBoxIn a:hover {
+	color: #FFFFFF;
+}
+
+.navBoxIn .cart:hover {
+	color: #FF6700;
+	background: #FFFFFF;
+}
+
+.contentShow {
+	height: 600px;
+	background: #FFFFFF;
+}
+
+.contentShowIn {
+	height: 100%;
+	background: pink;
+}
+
+.setHeader {
+	height: 55px;
+	background: green;
+	padding: 20px 0;
+}
+
+/* logo */
+.logo {
+	width: 55px;
+	height: 55px;
+	background: ;
+	float: left;
+	overflow: hidden;/*溢出隐藏，隐藏“小米商城”*/
+	text-indent: -999999px;
+	margin-right: 14px;
+}
+
+.logoIcon {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #FF6700 url(../images/logo-mi2.png) center center no-repeat;
+	background-size: cover;
+}
+
+/* 广告 */
+.advIcon {
+	width: 165px;
+	height: 55px;
+	float: left;
+	background: url(../images/41d16e66381cfeda7b6b39ab67678d5e.webp) center center no-repeat;
+}
+
+
+.navBd {
+	height: 100%;
+	background: #00FF7F;
+	float: left;
+	font-size: 16px;
+	line-height: 55px;
+}
+.navBd li{
+	float: left;
+	padding: 0 10px;
+}
+.searchBox {
+	width: 256px;
+	height: 50px;
+	background: #00FFFF;
+	float: right;
+	margin-top: 2.5px;
 }
