@@ -126,9 +126,19 @@
 	padding: 0 10px;
 }
 .searchBox {
-	width: 256px;
+	width: 206px;
 	height: 50px;
-	background: #00FFFF;
 	float: right;
-	margin-top: 2.5px;
+	border: 1px solid #E0E0E0;
+	box-sizing: border-box;
+}
+.searchBoxLeft{
+	width: 244px;
+	height: 100% ;
+	border-right: 1px solid #E0E0E0;
+	box-sizing: border-box;
+}
+.searchBoxRight{
+	width: 50px;
+	height: 100%;
 }
