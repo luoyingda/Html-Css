@@ -71,18 +71,13 @@
 }
 
 .contentShow {
-	height: 600px;
 	background: #FFFFFF;
 }
 
-.contentShowIn {
-	height: 100%;
-	background: pink;
-}
+.contentShowIn {}
 
 .setHeader {
 	height: 55px;
-	background: green;
 	padding: 20px 0;
 }
 
@@ -90,9 +85,10 @@
 .logo {
 	width: 55px;
 	height: 55px;
-	background: ;
+	background: #FF6700;
 	float: left;
-	overflow: hidden;/*溢出隐藏，隐藏“小米商城”*/
+	overflow: hidden;
+	/*溢出隐藏，隐藏“小米商城”*/
 	text-indent: -999999px;
 	margin-right: 14px;
 }
@@ -110,35 +106,172 @@
 	width: 165px;
 	height: 55px;
 	float: left;
-	background: url(../images/41d16e66381cfeda7b6b39ab67678d5e.webp) center center no-repeat;
 }
 
 
 .navBd {
 	height: 100%;
-	background: #00FF7F;
 	float: left;
 	font-size: 16px;
 	line-height: 55px;
 }
-.navBd li{
+
+.navBd li {
 	float: left;
 	padding: 0 10px;
 }
+
 .searchBox {
-	width: 206px;
+	width: 296px;
 	height: 50px;
+	/* 有死高度不用清浮动 */
 	float: right;
 	border: 1px solid #E0E0E0;
 	box-sizing: border-box;
+	margin-top: 0.5px;
 }
-.searchBoxLeft{
+
+.searchBoxLeft {
 	width: 244px;
-	height: 100% ;
+	height: 100%;
 	border-right: 1px solid #E0E0E0;
 	box-sizing: border-box;
+	float: left;
 }
-.searchBoxRight{
+
+.keywords {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.searchBoxRight {
 	width: 50px;
 	height: 100%;
+	line-height: 48px;
+	float: left;
+	text-align: center;
+	font-size: 26px;
+	color: #333333;
+}
+
+/* banner图/轮播图 */
+.bannerBox {
+	height: 460px;
+	background: lightblue;
+	position: relative;
+}
+
+.bannerWrapper {
+	height: 100%;
+
+}
+
+.bannerWrapper .slider {
+	display: block;
+	height: 100%;
+
+}
+
+.bannerWrapper .slider img {
+	display: block;
+	height: 100%;
+}
+
+/* 侧边栏 */
+.sliderBar {
+	width: 234px;
+	height: 100%;
+	background: rgba(105, 101, 101, 0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 20px 0;
+	box-sizing: border-box;
+	/* 通俗来讲就是不会改变盒子大小*/
+}
+
+.sliderBar li {
+	height: 42px;
+	line-height: 40px;
+	font-size: 14px;
+	text-indent: 30px;
+	/* 文字首行缩进 */
+}
+
+.sliderBar li a {
+	color: #FFFFFF;
+}
+
+.sliderBar .icon-jiantou {
+	margin-left: 91px;
+}
+
+.sliderBar li:hover {
+	background-color: #ff6700;
+}
+
+.contentBox {
+	width: 600px;
+	height: 460px;
+	background: pink;
+	position: absolute;
+	left: 234px;
+	top: 0;
+	display: none;
+}
+
+.sliderBar li:hover .contentBox {
+	display: block;
+}
+
+/* 轮播箭头 */
+.arrowLeft,
+.arrowRight {
+	width: 41px;
+	height: 69px;
+	background: url(../images/icon-slides.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+}
+
+.arrowLeft {
+	left: 234px;
+	background-position: -84px 0;
+}
+
+.arrowRight {
+	right: 0;
+	background-position: -125px 0;
+}
+
+.arrowLeft:hover {
+	background-position: 0 0;
+}
+
+.arrowRight:hover {
+	background-position: -42px 0;
+}
+
+/* 分页器 */
+.pageNation{
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+}
+.pageNation li{
+	width: 10px;
+	height: 10px;
+	background: rgba(0,0,0,.4);
+	border: 2px solid #E0E0E0;
+	box-sizing: border-box;
+	border-radius: 50%;
+	float: left;
+	margin: 0 4px;
+}
+.pageNation li:hover{
+	background: rgba(255,255,255,.4);
 }
