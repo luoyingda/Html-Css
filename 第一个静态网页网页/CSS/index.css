@@ -545,22 +545,26 @@ del {
 	background: url(../images/431e5fd6bfd1b67d096928248be18303.webp) center center no-repeat;
 	margin: 22px 0;
 }
+
 /* 手机模块 */
-.phoneBox{
-}
-.title{
+.phoneBox {}
+
+.title {
 	height: 58px;
 }
-.titleRight{
+
+.titleRight {
 	float: right;
 	line-height: 58px;
 	color: #424242;
 	font-size: 16px;
 }
-.titleRight:hover{
+
+.titleRight:hover {
 	color: #ff6700;
 }
-.phoneBox .icon-zuojiantou1{
+
+.phoneBox .icon-zuojiantou1 {
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
@@ -571,33 +575,38 @@ del {
 	color: #FFFFFF;
 	margin-left: 10px;
 }
-.titleRight:hover .icon-zuojiantou1{
-	background:#ff6700;
+
+.titleRight:hover .icon-zuojiantou1 {
+	background: #ff6700;
 }
 
-.phoneBox .midBox{
+.phoneBox .midBox {
 	height: 614px;
 }
-.phoneBox .midBox .left{
+
+.phoneBox .midBox .left {
 	width: 234px;
 	height: 100%;
 	background: url(../images/c583f2edc613f1be20fa415910b13ce3.webp) center center no-repeat;
 	float: left;
 }
-.phoneBox .midBox .right{
+
+.phoneBox .midBox .right {
 	float: left;
 	width: 992px;
 	height: 100%;
-	
+
 }
-.phoneBox .midBox .right>li{
+
+.phoneBox .midBox .right>li {
 	width: 234px;
 	height: 300px;
 	float: left;
 	background: #FFFFFF;
 	margin: 0 0 14px 14px;
 }
-.phoneBox .midBox .right>li a{
+
+.phoneBox .midBox .right>li a {
 	display: block;
 	height: 100%;
 	padding: 20px 0;
@@ -606,45 +615,115 @@ del {
 	color: #333333;
 	font-size: 14px;
 }
-.phoneBox .midBox .right>li img{
+
+.phoneBox .midBox .right>li img {
 	width: 160px;
 	height: 160px;
 	display: block;
 	margin: 0 auto 18px;
 }
-.phoneBox .midBox .right>li h4{
+
+.phoneBox .midBox .right>li h4 {
 	font-weight: normal;
 	margin-bottom: 2px;
 	font-size: ;
 	color: ;
 }
-.phoneBox .desc{
+
+.phoneBox .desc {
 	color: #B0B0B0;
 	margin-bottom: 10px;
 }
-.phoneBox .price{
+
+.phoneBox .price {
 	color: #B0B0B0;
 }
-.phoneBox .nowPrice{
+
+.phoneBox .nowPrice {
 	color: #FF6700;
 	margin-right: 2px;
 }
-.phoneBox .adv2{
+
+.phoneBox .adv2 {
 	background: url(../images/41d16e66381cfeda7b6b39ab67678d5e.webp) center center no-repeat;
 }
+
 /* 家电模块 */
-.homeBox .titleRight li{
+.homeBox .titleRight li {
 	float: left;
-	margin-left: 30px;
+	margin-top: 18px;
 	line-height: 1;
-	margin-top: 21px;
+	margin-left: 30px;
 	padding-bottom: 4px;
 }
-.homeBox .titleRight .current{
+
+.homeBox .titleRight .current {
 	border-bottom: 2px solid #FF6700;
 	color: #FF6700;
-	
+
 }
-.homeBox .bottom .left>a{
-	
+
+.homeBox .midBox .left>a {
+	display: block;
+	height: 300px;
+	background: url(../images/116fc43816b87192be4e67cf762e8da5.webp) center center no-repeat;
+}
+
+.homeBox .midBox .left>.top {
+	margin-bottom: 14px;
+}
+
+.homeBox .midBox .left {
+	background-image: none;
+}
+
+.homeBox .midBox .right .last {
+	background: #F5F5F5;
+}
+
+.homeBox .midBox .right .last>a {
+	height: 143px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	display: block;
+	text-align: left;
+	color: #333333;
+	font-size: 14px;
+	background: #FFFFFF;
+}
+
+.homeBox .midBox .right .last .top {
+	margin-bottom: 14px;
+}
+
+.homeBox .midBox .right .last .top img {
+	width: 80px;
+	height: 80px;
+	float: right;
+	margin: 0;
+}
+
+.homeBox .midBox .right .last .textContent {
+	float: left;
+	text-align: center;
+	padding-left: 40px;
+}
+
+.homeBox .midBox .last .price {
+	margin-top: 10px;
+	color: #FF6700;
+	text-align: center;
+}
+
+.homeBox .midBox .last .bottom .icon-jiantouloukong-you {
+	font-size: 48px;
+	color: #FF6700;	
+	float: right;
+	margin-right: 10px;
+}
+.homeBox .midBox .last .bottom h4{
+	font-size: 18px;
+}
+.homeBox .midBox .last .bottom .price{
+	color: #757575;
 }

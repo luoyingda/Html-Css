@@ -1,0 +1,106 @@
+.fastNav {
+				width: 84px;
+				font-size: 14px;
+				color: #757575;
+				position: fixed;
+				right: 0;
+				top: 50%;
+				margin-top: -280px;
+			}
+
+			.fastNav li {
+				height: 90px;
+				border: 1px solid #CCCCCC;
+				border-bottom: none;
+				padding-top: 18px;
+			}
+
+			.fastNav li:hover .imgBox img:nth-child(2) {
+				opacity: 1;
+			}
+
+			.fastNav li:last-child {
+				margin-top: 14px;
+				border-bottom: 1px solid #CCCCCC;
+			}
+
+			.fastNav .imgBox {
+				width: 30px;
+				height: 30px;
+				position: relative;
+				/* 子元素设置好绝对定位，但没有在父元素设置相对定位为参照物，会默认以body为父元素。 */
+				margin: 0 auto;
+			}
+
+			.fastNav img {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.fastNav .imgBox img:nth-child(2) {
+				opacity: 0;
+			}
+
+			.fastNav p {
+				text-align: center;
+				margin-top: 8px;
+			}
+
+			.fastNav a:hover {
+				color: #ff6700;
+			}
+
+			.fastNav li:nth-last-child(2) {
+				border-bottom: 1px solid #CCCCCC;
+			}
+
+			.fastNav li:first-child:hover
+			 .weixin{
+				display: block;
+			}
+			.fastNav .weixin {
+				width: 130px;
+				height: 192px;
+				background: #FFFFFF;
+				border: 1px solid #F5F5F5;
+				position: absolute;
+				left: -144px;
+				top: 0;
+				display: none;
+			}
+			
+			.fastNav .weixinBox {
+				width: 100px;
+				height: 100px;
+				background-image: url(../images/ewm.png);
+				background-size: cover;
+				margin: 0 auto;
+			}
+
+			.fastNav .text {
+				color: #000000;
+				text-align: center;
+				margin: 14px auto 0 auto;
+			}
+
+			.weixin::after {
+				content: "";
+				position: absolute;
+				right: -20px;
+				top: 21px;
+				border: 10px solid red;
+				border-color: transparent transparent transparent #FFFFFF;
+			}
+
+			.weixin::before {
+				content: "";
+				position: absolute;
+				right: -20px;
+				top: 21px;
+				border: 10px solid red;
+				border-color: transparent transparent transparent #F5F5F5;
+			}
