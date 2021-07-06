@@ -212,13 +212,12 @@ body {
 }
 
 .sliderBar li:hover {
-	background-color: #ff6700;
+	/* background-color: #ff6700; */
 }
 
 .contentBox {
-	width: 600px;
-	height: 460px;
-	background: pink;
+	width: 992px;
+	background: #FFFFFF;
 	position: absolute;
 	left: 234px;
 	top: 0;
@@ -227,6 +226,25 @@ body {
 
 .sliderBar li:hover .contentBox {
 	display: block;
+}
+
+.sliderBar .contentBox .detailBox {
+}
+
+.sliderBar .contentBox .detailBox>li {
+	padding: 18px 20px;
+}
+
+.sliderBar .detailBox .dicrBox {
+	text-align: center;
+}
+
+.sliderBar .detailBox .dicrBox>img {
+	vertical-align: middle;
+}
+
+.sliderBar .detailBox .dicrBox>span {
+	color: #000;
 }
 
 /* 轮播箭头 */
@@ -717,13 +735,15 @@ del {
 
 .homeBox .midBox .last .bottom .icon-jiantouloukong-you {
 	font-size: 48px;
-	color: #FF6700;	
+	color: #FF6700;
 	float: right;
 	margin-right: 10px;
 }
-.homeBox .midBox .last .bottom h4{
+
+.homeBox .midBox .last .bottom h4 {
 	font-size: 18px;
 }
-.homeBox .midBox .last .bottom .price{
+
+.homeBox .midBox .last .bottom .price {
 	color: #757575;
 }
