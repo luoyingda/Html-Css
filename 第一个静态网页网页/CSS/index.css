@@ -110,7 +110,6 @@ body {
 	float: left;
 }
 
-
 .navBd {
 	height: 100%;
 	float: left;
@@ -118,11 +117,39 @@ body {
 	line-height: 55px;
 }
 
-.navBd li {
+.navBd .nav-list{
+	position: relative;
 	float: left;
 	padding: 0 10px;
 }
 
+/* 完全自己动手 */
+.navBd .container{
+	position: absolute;
+	width: 1226px;
+	height: 300px;
+	background: pink;
+	z-index: 999;
+}
+.navBd .container .child-list{
+	float: left;
+}
+.navBd .container .child-content{
+	display: block;
+	text-align: center;
+}
+.navBd .container .child-content .imgBox{
+	width: 160px;
+	height: 110px;
+}
+.navBd .container .child-content .title{
+	color: #757575;
+	font-size: 16px;
+}
+.navBd .container .child-content .price{
+	color: #FF6700;
+}
+	
 .searchBox {
 	width: 296px;
 	height: 50px;
