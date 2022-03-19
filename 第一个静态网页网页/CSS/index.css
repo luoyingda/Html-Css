@@ -122,34 +122,48 @@ body {
 	float: left;
 	padding: 0 10px;
 }
-
 /* 完全自己动手 */
-.navBd .container{
+.navBd a:hover{
+	color:#FF6700;
+}
+/* 完全自己动手 */
+ .container{
 	position: absolute;
+	margin-top: 60px;
 	width: 1226px;
-	height: 300px;
-	background: pink;
+	background: white;
 	z-index: 999;
+	box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+	display: none;
 }
-.navBd .container .child-list{
+ .container .child-list{
 	float: left;
+	width: 203px;
 }
-.navBd .container .child-content{
+ .container .child-content{
+	margin-top: 40px;
 	display: block;
 	text-align: center;
 }
-.navBd .container .child-content .imgBox{
-	width: 160px;
+ .container .child-list .imgBox{
 	height: 110px;
+	border-right: 1px solid #000;
 }
-.navBd .container .child-content .title{
+.container .child-list:nth-last-child(1) .imgBox{
+	height: 110px;
+	margin-top: 30px;
+	border: none;
+}
+ .container .child-list .title{
 	color: #757575;
-	font-size: 16px;
+	font-size: 13px;
+	margin-top: 15px;
 }
-.navBd .container .child-content .price{
+ .container .child-list .price{
 	color: #FF6700;
 }
-	
+
+/* 搜索框 */
 .searchBox {
 	width: 296px;
 	height: 50px;
@@ -238,10 +252,6 @@ body {
 	margin-left: 91px;
 }
 
-.sliderBar li:hover {
-	/* background-color: #ff6700; */
-}
-
 .contentBox {
 	width: 992px;
 	background: #FFFFFF;
@@ -253,9 +263,6 @@ body {
 
 .sliderBar li:hover .contentBox {
 	display: block;
-}
-
-.sliderBar .contentBox .detailBox {
 }
 
 .sliderBar .contentBox .detailBox>li {
